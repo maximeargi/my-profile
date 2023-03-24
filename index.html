@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maxime Argillier's Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="images/img-0497.jpg" alt="Maxime Argillier" class="profile-image">
+      <div class="header-info">
+        <h1>Hello, I'm Maxime ✌️</h1>
+        <p>Maxime Argillier</p>
+        <p>16th May 2003</p>
+        <p>Paris, France</p>
+        <p>Student in the Global BBA program at ESSEC Business School</p>
+      </div>
+    </div>
+    <div id="disappearing-text" class="fade-out">Feel free to explore with your mouse 😉</div>
+    <label class="switch">
+      <input type="checkbox" id="dark-mode-toggle">
+      <span class="slider round"></span>
+    </label>
+    <div class="about-me">
+      <h2>A little about me :</h2>
+      <p>My name is Maxime, but my friends call me Max! I have been living in Paris since I was a kid, and I want to live abroad in an English-speaking country. New Zealand would be the dream! I enjoy studying subjects such as macroeconomics and entrepreneurship at ESSEC, and I have some basic knowledge in programming.</p>
+    </div>
+    <div class="languages">
+      <h2>I speak various languages!</h2>
+      <ul>
+        <li>English: ★★★★★</li>
+        <li>French: ★★★★★</li>
+        <li>Spanish: ★★★☆☆</li>
+        <li>Italian: ★★☆☆☆</li>
+      </ul>
+    </div>
+    <div class="interests">
+      <h2>What I like to do :</h2>
+      <ul>
+        <li>🏋️ Fitness</li>
+        <li>🚣‍♂️ Rowing</li>
+        <li>🌍 Travelling</li>
+        <li>🎮 Video games</li>
+        <li>📸 Photography</li>
+      </ul>
+    </div>
+    <div class="photo-gallery">
+      <h2 class="photo-gallery-title">Some of my Favorite Photos</h2>
+      <div class="photo-row">
+        <img src="images/photo1.jpg" alt="Photo 1" class="photo">
+        <img src="images/photo2.jpg" alt="Photo 2" class="photo">
+      </div>
+      <div class="photo-row">
+        <img src="images/photo3.jpg" alt="Photo 3" class="photo">
+        <img src="images/photo4.jpg" alt="Photo 4" class="photo">
+      </div>
+      <div class="photo-row">
+        <img src="images/photo5.jpg" alt="Photo 5" class="photo">
+        <img src="images/photo6.jpg" alt="Photo 6" class="photo">
+      </div>
+    </div>
+    <div class="social-media-icons">
+      <h2 class="social-media-title">Follow me!</h2>
+      <div class="social-media-links">
+        <a href="https://www.linkedin.com/in/maxime-argillier/" target="_blank" rel="noopener noreferrer">
+          <img src="images/logo-linkedin.svg" alt="LinkedIn" class="social-media-icon">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100068670699533" target="_blank" rel="noopener noreferrer">
+          <img src="images/logo-facebook.svg" alt="Facebook" class="social-media-icon">
+        </a>
+        <a href="https://www.instagram.com/maxime.argi/" target="_blank" rel="noopener noreferrer">
+          <img src="images/logo-instagram.svg" alt="Instagram" class="social-media-icon">
+        </a>
+      </div>
+    </div>
+  </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+      const disappearingText = document.getElementById("disappearing-text");
+      disappearingText.style.opacity = "0";
+    }, 5000);
+  });
+</script>
+<script>
+  document.getElementById("dark-mode-toggle").addEventListener("change", function() {
+    document.body.classList.toggle("dark-mode");
+  });
+</script>
+</body>
+</html>
